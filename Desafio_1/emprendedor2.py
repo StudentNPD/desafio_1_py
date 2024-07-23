@@ -6,7 +6,8 @@ gasto_total= int(input("Ingrese el gasto total:\n"))
 
 
 # Aumento en 50%
-incremento = usuario_premium * 1.5
+incremento = (precio_suscripcion * usuario_premium) * 1.5
 
-utilidades = (precio_suscripcion * (usuario_normal + incremento)) - gasto_total
-print(f'Utilidades son:\n{utilidades}')
+
+utilidades = ((precio_suscripcion * usuario_normal) + incremento) - gasto_total
+print(f'Las utilidades son:\n{utilidades}')
