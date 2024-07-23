@@ -4,5 +4,9 @@ usuario_normal = int(input("Ingrese número de usuarios normales:\n"))
 usuario_premium = int(input("Ingrese número de usuarios premiun:\n"))
 gasto_total= int(input("Ingrese el gasto total:\n"))
 
-utilidades = (precio_suscripcion * usuario_normal * usuario_premium) - gasto_total
+
+# Aumento en 50%
+incremento = usuario_premium * 1.5
+
+utilidades = (precio_suscripcion * (usuario_normal + incremento)) - gasto_total
 print(f'Utilidades son:\n{utilidades}')
